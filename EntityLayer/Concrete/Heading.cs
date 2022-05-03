@@ -11,6 +11,9 @@ namespace EntityLayer.Concrete
         public int Id { get; set; }
         public int Name { get; set; }
         public DateTime CreatedDate { get; set; }
+        public int CategoryID { get; set; }
+        public virtual Category Category { get; set; }
 
+        public ICollection<Content> Contents { get; set; }
     }
 }
