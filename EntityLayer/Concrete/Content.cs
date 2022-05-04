@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -10,15 +11,16 @@ namespace EntityLayer.Concrete
     public class Content
     {
         [Key]
-        public int Id { get; set; }
-        [StringLength(1000)]
+        public int ContentId { get; set; }
+
         public string Value { get; set; }
+
         public DateTime CreatedDate { get; set; }
 
-        public int HeadingID { get; set; }
+        public int HeadingId { get; set; }
         public virtual Heading Heading { get; set; }
 
-        public int WriterID { get; set; }
+        public int WriterId { get; set; }
         public virtual Writer Writer { get; set; }
     }
 }

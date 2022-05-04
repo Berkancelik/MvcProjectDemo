@@ -10,13 +10,17 @@ namespace EntityLayer.Concrete
     public class About
     {
         [Key]
-        public int Id { get; set; }
+        public int AboutId { get; set; }
+
         [StringLength(1000)]
         public string Details { get; set; }
+
         [StringLength(1000)]
         public string Details2 { get; set; }
+
         [StringLength(100)]
         public string Image { get; set; }
+
         [StringLength(100)]
         public string Image2 { get; set; }
     }

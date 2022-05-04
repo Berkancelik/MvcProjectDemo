@@ -10,12 +10,15 @@ namespace EntityLayer.Concrete
     public class Category
     {
         [Key]
-        public int Id { get; set; }
-        [StringLength(1000)]
+        public int CategoryId { get; set; }
+
         public string Name { get; set; }
+
         [StringLength(1000)]
-        public string Decription  { get; set; }
+        public string Decription { get; set; }
+
         public bool Status { get; set; }
+
         public ICollection<Heading> Headings { get; set; }
     }
 }
