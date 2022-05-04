@@ -15,7 +15,7 @@ namespace EntityLayer.Concrete
         public string Name { get; set; }
 
         [StringLength(1000)]
-        public string Decription { get; set; }
+        public string Description { get; set; }
 
         public bool Status { get; set; }
 
