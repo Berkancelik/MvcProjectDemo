@@ -1,7 +1,9 @@
-﻿
+﻿@using EntityLayer.Concrete
+@model List<Category>
 @{
     Layout = null;
 }
+
 <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
 
 <h3>Mvc Kamp Tablo Örneği - Kategori</h3>
@@ -13,9 +15,14 @@
         <th> Açıklama</th>
         <th> Durum</th>
     </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.CategoryId</td>
+            <td>@item.Name</td>
+            <td>@item.Description</td>
+            <td>@item.Status</td>
+        </tr>
+    }
 
 </table>
-
-<button class="btn btn-info">Yeni Kategori</button>
-<button class="btn btn-warning">Kategori Listesi </button>
-<button class="btn btn-danger">Kategori Açıklamaları </button>

@@ -73,6 +73,10 @@
     <Compile Include="Migrations\202205040641260_mig_content_deleted_value2.designer.cs">
       <DependentUpon>202205040641260_mig_content_deleted_value2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202205050552560_add-migration mig_fixed.cs" />
+    <Compile Include="Migrations\202205050552560_add-migration mig_fixed.designer.cs">
+      <DependentUpon>202205050552560_add-migration mig_fixed.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -92,6 +96,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202205040641260_mig_content_deleted_value2.resx">
       <DependentUpon>202205040641260_mig_content_deleted_value2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205050552560_add-migration mig_fixed.resx">
+      <DependentUpon>202205050552560_add-migration mig_fixed.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
