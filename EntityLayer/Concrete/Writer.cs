@@ -9,22 +9,16 @@ namespace EntityLayer.Concrete
 {
     public class Writer
     {
-        [Key]
         public int WriterId { get; set; }
 
-        [StringLength(50)]
         public string Name { get; set; }
 
-        [StringLength(50)]
         public string Surname { get; set; }
 
-        [StringLength(50)]
         public string Image { get; set; }
 
-        [StringLength(50)]
         public string Mail { get; set; }
 
-        [StringLength(20)]
         public string Password { get; set; }
 
         public ICollection<Heading> Headings { get; set; }

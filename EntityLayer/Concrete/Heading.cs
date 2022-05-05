@@ -9,7 +9,6 @@ namespace EntityLayer.Concrete
 {
     public class Heading
     {
-        [Key]
         public int HeadingId { get; set; }
 
         public string Name { get; set; }
