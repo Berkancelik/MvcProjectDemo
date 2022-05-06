@@ -83,6 +83,10 @@
     <Compile Include="Migrations\202205050552560_add-migration mig_fixed.designer.cs">
       <DependentUpon>202205050552560_add-migration mig_fixed.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202205060606442_database-f.cs" />
+    <Compile Include="Migrations\202205060606442_database-f.designer.cs">
+      <DependentUpon>202205060606442_database-f.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -105,6 +109,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202205050552560_add-migration mig_fixed.resx">
       <DependentUpon>202205050552560_add-migration mig_fixed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205060606442_database-f.resx">
+      <DependentUpon>202205060606442_database-f.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
