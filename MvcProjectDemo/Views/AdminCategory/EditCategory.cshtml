@@ -7,8 +7,9 @@
 <h2>Kategori Güncelleme Sayfası</h2>
 
 @using (Html.BeginForm("EditCategory", "AdminCategory", FormMethod.Post))
-{
+{ 
 <div class="form-group">
+     
     @Html.Label("Kategori ID")
     @Html.TextBoxFor(x => x.CategoryId, new { @class = "form-control" })
 
