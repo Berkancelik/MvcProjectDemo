@@ -36,7 +36,7 @@ namespace MvcProjectDemo.Controllers
             ValidationResult results = categoryValidator.Validate(p);
             if (results.IsValid)
             {
-                cm.CategoryAdd(p);
+                cm.Add(p);
                 return RedirectToAction("Index");
             }
             else
@@ -52,9 +52,16 @@ namespace MvcProjectDemo.Controllers
 
         public ActionResult DeleteCategory(int id)
         {
-            var categoryvalue = cm.GetById(id);
-            cm.CategoryDelete(categoryvalue);
+            var categoryValue = cm.GetById(id);
+            cm.Delete(categoryValue);
             return RedirectToAction("Index");
+        }
+
+        [HttpGet]
+        public ActionResult EditCategory(int id)
+        {
+            var categoryValue =cm.GetById(id);  
+            return View(categoryValue); 
         }
 
     }
