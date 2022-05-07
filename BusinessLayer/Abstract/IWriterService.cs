@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EntityLayer.Concrete;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,13 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Abstract
 {
-    public class IWriterService
+    public interface IWriterService
     {
+        List<Writer> GetList();
+        void Add(Writer writer);
+        Writer GetById(int id);
+        void Delete(Writer writer);
+        void Update(Writer writer);
+
     }
 }
