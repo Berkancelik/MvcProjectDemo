@@ -64,5 +64,14 @@ namespace MvcProjectDemo.Controllers
             return View(categoryValue); 
         }
 
+        [HttpPost]
+        public ActionResult EditCategory(Category p)
+        {
+            cm.Update(p);
+            return RedirectToAction("Index");
+        
+        }
+
+
     }
 }

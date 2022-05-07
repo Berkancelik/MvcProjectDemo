@@ -44,10 +44,6 @@ namespace BusinessLayer.Concrete
             _categoryDal.Update(category);
         }
 
-        //public CategoryAdd(Category p)
-        //{
-        //    return()
-
-        //}
+     
     }
 }
