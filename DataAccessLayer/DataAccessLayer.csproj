@@ -87,6 +87,10 @@
     <Compile Include="Migrations\202205060606442_database-f.designer.cs">
       <DependentUpon>202205060606442_database-f.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202205080917465_Writer_Add_About.cs" />
+    <Compile Include="Migrations\202205080917465_Writer_Add_About.designer.cs">
+      <DependentUpon>202205080917465_Writer_Add_About.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -112,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202205060606442_database-f.resx">
       <DependentUpon>202205060606442_database-f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205080917465_Writer_Add_About.resx">
+      <DependentUpon>202205080917465_Writer_Add_About.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
