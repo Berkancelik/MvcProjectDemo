@@ -21,6 +21,7 @@ namespace EntityLayer.Concrete
         public string Mail { get; set; }
 
         public string Password { get; set; }
+        public string Title { get; set; }
 
         public ICollection<Heading> Headings { get; set; }
         public ICollection<Content> Contents { get; set; }

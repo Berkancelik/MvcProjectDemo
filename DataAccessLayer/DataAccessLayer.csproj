@@ -91,6 +91,10 @@
     <Compile Include="Migrations\202205080917465_Writer_Add_About.designer.cs">
       <DependentUpon>202205080917465_Writer_Add_About.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202205080958594_Write_Title_Added.cs" />
+    <Compile Include="Migrations\202205080958594_Write_Title_Added.designer.cs">
+      <DependentUpon>202205080958594_Write_Title_Added.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -119,6 +123,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202205080917465_Writer_Add_About.resx">
       <DependentUpon>202205080917465_Writer_Add_About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205080958594_Write_Title_Added.resx">
+      <DependentUpon>202205080958594_Write_Title_Added.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
