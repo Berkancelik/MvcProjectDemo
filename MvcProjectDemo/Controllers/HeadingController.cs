@@ -48,5 +48,10 @@ namespace MvcProjectDemo.Controllers
             hm.Add(p);
             return RedirectToAction("Index");
         }
+
+        public ActionResult ContentByHeading()
+        {
+            return View();
+        }
     }
 }
