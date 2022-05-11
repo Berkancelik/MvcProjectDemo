@@ -63,6 +63,22 @@ namespace MvcProjectDemo.Controllers
             return View();
         }
 
-     
+        [HttpPost]
+        public ActionResult EditHeading(Heading p)
+        {
+            hm.Update(p);
+            return RedirectToAction("Index");
+        }
+
+        public ActionResult DeleteHeading(int id)
+        {
+            var headingValue = hm.GetById(id);
+            hm.Delete(headingValue);
+            return RedirectToAction("Index");
+        }
+
+
+
+
     }
 }

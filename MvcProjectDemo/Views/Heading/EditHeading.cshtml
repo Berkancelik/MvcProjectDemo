@@ -9,13 +9,29 @@
 {
     <div class="form-group">
         @Html.Label("Başlık ID")
+        @Html.TextBoxFor(x => x.HeadingId, new { @class = "form-control" })
+    </div>
+    <br />
+    <div class="form-group">
+        @Html.Label("Başlık Adı")
         @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
     </div>
     <br />
-    @Html.DropDownListFor(x=>x.CategoryID,(List<SelectListItem>)ViewBag.v1, new{@class ="form-control"})
+    <div class="form-group">
+        @Html.Label("Tarih")
+        @Html.TextBoxFor(x => x.CreatedDate, new { @class = "form-control" })
+    </div>
+    <br />
+    <div class="form-group">
+        @Html.Label("Yazar ID")
+        @Html.TextBoxFor(x => x.WriterId, new { @class = "form-control" })
+    </div>
+    <br />
+    <div class="form-group">
+        @Html.Label("Başlık Adı")
+        @Html.DropDownListFor(x => x.CategoryID, (List<SelectListItem>)ViewBag.v1, new { @class = "form-control" })
+    </div>
     <br />
     <button class="btn btn-success">Güncelle</button>
-
-
 }
 
