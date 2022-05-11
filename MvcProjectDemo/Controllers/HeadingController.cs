@@ -49,9 +49,20 @@ namespace MvcProjectDemo.Controllers
             return RedirectToAction("Index");
         }
 
-        public ActionResult ContentByHeading()
+        [HttpGet]
+        public ActionResult EditHeading(int id)
         {
+            List<SelectListItem> valueCategory = (from x in cm.GetList()
+                                                  select new SelectListItem
+                                                  {
+                                                      Text = x.Name,
+                                                      Value = x.CategoryId.ToString(),
+                                                  }).ToList();
+
+            ViewBag.v1 = valueCategory;
             return View();
         }
+
+     
     }
 }

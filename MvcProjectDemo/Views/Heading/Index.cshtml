@@ -47,7 +47,7 @@
                     <tbody>
                         @foreach (var item in Model)
                         {
-                            if (item.Category.Name =="Tiyatro")
+                            if (item.Category.Name == "Tiyatro")
                             {
                                 color = "badge badge-warning";
                             }
@@ -72,47 +72,47 @@
                                 color = "badge badge-success";
                             }
 
-                        <tr>
-                            <td>
-                                @item.HeadingId
-                            </td>
-                            <td>
-                                <a>
-                                    @item.Name
-                                </a>
-                                <br />
-                                <small>
-                                    @(((DateTime)item.CreatedDate).ToString("dd-MMM-yyyy"))
-                                </small>
-                            </td>W
-                            <td>
-                                <ul class="list-inline">
-                                    <li class="list-inline-item">
-                                        <img alt="Avatar" class="table-avatar" src="@item.Writer.Image">
-                                    </li>
-                                </ul>
-                            </td>
-                            <td class="project-state">
-                                <span class="@color">@item.Category.Name</span>
-                            </td>
-                            <td class="project-actionsW text-right">
-                                <a class="btn btn-primary btn-sm" href="/Content/ContentByHeading/@item.HeadingId">
-                                    <i class="fas fa-folder">
-                                    </i>
-                                    Yazılar
-                                </a>
-                                <a class="btn btn-info btn-sm" href="#">
-                                    <i class="fas fa-pencil-alt">
-                                    </i>
-                                    Düzenle
-                                </a>
-                                <a class="btn btn-danger btn-sm" href="#">
-                                    <i class="fas fa-trash">
-                                    </i>
-                                    Sil
-                                </a>
-                            </td>
-                        </tr>
+                            <tr>
+                                <td>
+                                    @item.HeadingId
+                                </td>
+                                <td>
+                                    <a>
+                                        @item.Name
+                                    </a>
+                                    <br />
+                                    <small>
+                                        @(((DateTime)item.CreatedDate).ToString("dd-MMM-yyyy"))
+                                    </small>
+                                </td>W
+                                <td>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            W                     <img alt="Avatar" class="table-avatar" src="@item.Writer.Image">
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td class="project-state">
+                                    <span class="@color">@item.Category.Name</span>
+                                </td>
+                                <td class="project-actionsW text-right">
+                                    <a class="btn btn-primary btn-sm" href="/Content/ContentByHeading/@item.HeadingId">
+                                        <i class="fas fa-folder">
+                                        </i>
+                                        Yazılar
+                                    </a>
+                                    <a class="btn btn-info btn-sm" href="/Heading/EditHeading/@item.HeadingId">
+                                        <i class="fas fa-pencil-alt">
+                                        </i>
+                                        Düzenle
+                                    </a>
+                                    <a class="btn btn-danger btn-sm" href="#">
+                                        <i class="fas fa-trash">
+                                        </i>
+                                        Sil
+                                    </a>
+                                </td>
+                            </tr>
                         }
                     </tbody>
                 </table>
