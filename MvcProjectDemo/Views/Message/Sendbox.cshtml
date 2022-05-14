@@ -1,7 +1,7 @@
 ﻿@using EntityLayer.Concrete
 @model List<Message>
 @{
-    ViewBag.Title = "Inbox";
+    ViewBag.Title = "Sendbox";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
@@ -35,7 +35,7 @@
             <div class="col-md-9">
                 <div class="card card-primary card-outline">
                     <div class="card-header">
-                        <h3 class="card-title">Gelen Mesajlar</h3>
+                        <h3 class="card-title">Gönderilen Mesajlar</h3>
                         <div class="card-tools">
                             <div class="input-group input-group-sm">
                                 <input type="text" class="form-control" placeholder="Mail kutusunda ara..">
@@ -85,7 +85,7 @@
                                                 </div>
                                             </td>
                                             <td class="mailbox-star"><a href="/Contact/GetContactDetails/@item.Id/"><i class="fas fa-star text-warning"></i></a></td>
-                                            <td class="mailbox-name"><a href="/Contact/GetContactDetails/@item.Id/">@item.SenderMail</a></td>
+                                            <td class="mailbox-name"><a href="/Contact/GetContactDetails/@item.Id/">@item.ReceiverMail</a></td>
                                             <td class="mailbox-subject">
                                                 <b>@item.Subject</b> @item.Content
                                             </td>
