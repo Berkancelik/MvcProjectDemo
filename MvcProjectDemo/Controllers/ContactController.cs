@@ -14,11 +14,18 @@ namespace MvcProjectDemo.Controllers
             return View(contactValues);
         }
 
-        public ActionResult GetContactDetails(int id)
+        public ActionResult GetContactDdetails(int id)
         {
             var contactValues = cm.GetById(id); 
             return View(contactValues);  
         }
+
+        public ActionResult GetInBoxMessageDetails(int id)
+        {
+            var values = cm.GetById(id);
+            return View(values);
+        }
+
 
         public PartialViewResult MessageListMenu()
         {
